@@ -1,0 +1,3 @@
+Using GOAP (basically A* search in order to achieve some task), but instead of the goal being specific tasks as determined by a FSM, the goal is always to maximize utility. Utility must be some function of wealth, hunger, thirst, and affinity for loved ones. Perhpas it could be a linear combinations of non-linear transformations of these inputs. As any input tends to zero, it's relative importance tends to infinity, so that the player won't starve to try and find some coin. 
+
+Speaking only of wealth for a second. Consider the case of a blacksmith in skyrim who has the choice of following the agent or
