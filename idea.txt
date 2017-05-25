@@ -1,3 +1,8 @@
 Using GOAP (basically A* search in order to achieve some task), but instead of the goal being specific tasks as determined by a FSM, the goal is always to maximize utility. Utility must be some function of wealth, hunger, thirst, and affinity for loved ones. Perhpas it could be a linear combinations of non-linear transformations of these inputs. As any input tends to zero, it's relative importance tends to infinity, so that the player won't starve to try and find some coin. 
 
-Speaking only of wealth for a second. Consider the case of a blacksmith in skyrim who has the choice of following the agent or
+Speaking only of wealth for a second. Consider the case of a blacksmith in skyrim who has the choice of following the agent or continuing with it's task. The decision function should decide, based on estimated probabilities, the expected utilities of the decision space and choose the highest value.
+
+Should such a system be a high-level planner with low-level tasks perfomed by an animator and typical FSM? Or can the GOAP utility planner govern every movement in the game world of the NPC?
+Considerations:
+  -Is there enough local compute power for all NPCs to be governed this way?
+  -Is it possible for a self-learning agent to behave in a human-like way after training
